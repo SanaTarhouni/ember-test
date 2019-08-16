@@ -1,0 +1,64 @@
+
+/*** List box **/
+.list-box{
+  padding-bottom: 4em;
+  margin-left: 7em;
+  margin-right:7em;
+  padding-top: 4em;
+  background-color: #F7F9FB;
+
+}
+/*** Card  **/
+.card{
+  width:35rem;
+  margin-bottom: 3rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  background-color: #E0E2E4 !important;
+  border-radius:  2% !important;
+  
+}
+
+/*** Card image **/
+.card-img-top{
+  border-radius:  10% !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+  max-height:20rem;
+}
+.card-img-flag{
+  position:relative;
+  bottom: -10px;
+  width: 1.2rem;
+  height: 1rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+/*** Card information **/
+.info-box{
+  background-color: #EFF3F6;
+}
+.card-info-one{
+  margin-right:0 !important;
+  margin-left:1rem !important;
+}
+.card-info-tow{
+  margin-right:0 !important;
+  margin-left:1rem !important;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+ /*background-color: #8B0000;*/
+  border-radius: 50%;
+  display: inline-block;
+}
+.period-days{
+   color:#696969;
+}
+

@@ -1,0 +1,65 @@
+{{outlet}}
+
+<section class="list-box">
+  <div class="row justify-content-around">
+    {{#each model as |project index|}}
+
+    <div col="col-8">
+      <div class="card">
+        <img class="card-img-top" src="assets/images/test.png" alt="Card image cap">
+        {{#if  (eq project.business.address.country "nl" ) }}
+        <img class="card-img-flag" src="assets/images/icon-flag-nl.svg" alt="Card image cap">
+        {{/if}}
+        {{#if  (eq project.business.address.country "es" ) }}
+        <img class="card-img-flag" src="assets/images/icon-flag-es.svg" alt="Card image cap">
+        {{/if}}
+        {{#if  (eq project.business.address.country "fr" ) }}
+        <img class="card-img-flag" src="assets/images/icon-flag-fr.svg" alt="Card image cap">
+        {{/if}}
+        {{#if  (eq project.business.address.country "it" ) }}
+        <img class="card-img-flag" src="assets/images/icon-flag-it.svg" alt="Card image cap">
+        {{/if}}
+
+
+        <div class="info-box">
+          <div class="row card-info-one justify-content-between">
+            <div class="col-8">
+              <p><strong>{{project.name}} </strong></p>
+            </div>
+            <div class="col-4">
+              <p class="period-days">{{format-date project.openingDate}} days ago</p>
+            </div>
+          </div>
+          <div class="row card-info-tow justify-content-between">
+            <div class="col-4">
+              <p>{{project.rate}}% .{{project.loanDuration}} months</p>
+            </div>
+            <div class="col-3">
+              <p> € {{project.amount}}</p>
+            </div>
+            <div class="col-3 ">
+              <p> {{#if  (eq project.grade  "B" ) }}
+                <span class="dot" style="background-color:rgb(250, 234, 15)"></span>
+                {{/if}}
+                {{#if  (eq project.grade  "B+" ) }}
+                <span class="dot" style="background-color:rgb(250, 234, 15)"></span>
+                {{/if}}
+                {{#if  (eq project.grade  "C") }}
+                <span class="dot" style="background-color:rgb(236, 146, 11)"></span>
+                {{/if}}
+                {{#if  (eq project.grade  "A") }}
+                <span class="dot" style="background-color:rgb(37, 236, 11)"></span>
+                {{/if}}
+
+                {{project.grade}}</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{/each}}
+
+  </div>
+</section>
