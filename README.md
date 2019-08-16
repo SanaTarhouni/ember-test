@@ -10,6 +10,9 @@ You will need the following things properly installed on your computer.
 You will use also ember-truth-helpers : HTMLBars template helpers for additional truth logic in if and unless statements.
 * [ember-truth-helpers](https://www.npmjs.com/package/ember-truth-helpers)
 
+You will use also ember-truth-helpers : HTMLBars template helpers for additional truth logic in if and unless statements.
+* [ember-truth-helpers](https://www.npmjs.com/package/ember-truth-helpers)
+
 ## Installation
 
 * `git clone https://github.com/SanaTarhouni/ember-test.git` 
